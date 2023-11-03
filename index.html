@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alata&family=Encode+Sans+Semi+Condensed:wght@100;500;700&family=Fraunces:ital,wght@1,400;1,500;1,600&family=Hanken+Grotesk:ital,wght@0,100;0,200;1,100&family=Inter:wght@400;500&family=Josefin+Sans:ital,wght@0,100;1,100;1,300&family=Lato:wght@300;400;700&family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,100&family=Open+Sans:wght@300;400;500;700&family=Poppins:wght@100;300;500&family=Roboto:wght@100;300;500;700&family=Russo+One&family=Water+Brush&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="calc">
+    <input type="text" id="display" readonly>
+    <br>
+    <button class="adicionais" onclick="clearDisplay()">AC</button>
+    <button class="adicionais" onclick="appendToDisplay('+/-')">+/-</button>
+    <button class="adicionais" onclick="appendToDisplay('/100')">%</button>
+    <button class="caracter" onclick="appendToDisplay('/')">÷</button>
+    <br>
+    <button class="number" onclick="appendToDisplay('1')">1</button>
+    <button class="number" onclick="appendToDisplay('2')">2</button>
+    <button class="number" onclick="appendToDisplay('3')">3</button>
+    <button class="caracter" onclick="appendToDisplay('*')">x</button>
+    <br>
+    <button class="number" onclick="appendToDisplay('4')">4</button>
+    <button class="number" onclick="appendToDisplay('5')">5</button>
+    <button class="number" onclick="appendToDisplay('6')">6</button>
+    <button class="caracter" onclick="appendToDisplay('-')">-</button>
+    <br>
+    <button class="number" onclick="appendToDisplay('7')">7</button>
+    <button class="number" onclick="appendToDisplay('8')">8</button>
+    <button class="number" onclick="appendToDisplay('9')">9</button>
+    <button class="caracter" onclick="appendToDisplay('+')">+</button>
+    <br>
+    <button class="number"  id="zero" onclick="appendToDisplay('0')">0</button>
+    <button class="number" onclick="appendToDisplay('.')">.</button>
+    <button class="caracter" onclick="calculateResult()">=</button>
+</div>
+    <script src="./src/script.js">
+    </script>
+
+</body>
+
+</html>

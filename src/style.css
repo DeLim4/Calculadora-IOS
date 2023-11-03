@@ -1,0 +1,59 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+
+body{
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+     font-family: 'Encode Sans Semi Condensed', sans-serif;
+     background-color: #000;
+}
+.calc{
+    margin: auto;
+}
+#display{
+    text-align: right;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    width: 80%;
+    height: 30vh;
+    font-size: 7vh;
+    padding: 1rem;
+  
+}
+button{
+    font-weight:500;
+   border: none;
+    font-size: 26px;
+    padding: 10px;
+    border-radius: 50%;
+    width: 90px;
+    height: 90px;
+    margin: 5px;
+    display: inline-block;
+    cursor: pointer;
+    color: #fff;
+   
+}
+.number{
+background-color: #333333;
+}
+
+.adicionais{
+background-color: #b4b4b4;
+color: #000;
+}
+
+.caracter{
+background-color: orange;
+}
+#zero{
+   width: 190px;
+   padding-left:3%;
+   text-align: left;
+   border-radius: 45px;
+}
